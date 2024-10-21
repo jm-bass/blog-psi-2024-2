@@ -14,11 +14,13 @@
             <h1>{{ post.titulo }}</h1>
         </div>
         
-        {% if post.imagem %}
-        <img src="{{ post.imagem.url }}" alt="" class="imagem-post">
-        {% else %}
-        <img src="{% static "assets/placeholder.jpg" %}" alt="" class="imagem-post-p1">
-        {% endif %}
+        <div class="container">
+            {% if post.imagem %}
+            <img src="{{ post.imagem.url }}" alt="" class="imagem-post">
+            {% else %}
+            <img src="{% static "css/assets/placeholder.png" %}" alt="" class="imagem-post-p1">
+            {% endif %}
+        </div>
         
         <div class="texto container">
             <p> {{ post.conteudo }} </p>
