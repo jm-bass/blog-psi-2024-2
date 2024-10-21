@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Alunos{% endblock title %}Alunos
+{% load static %}
+
+{% block content %}
+
+    <!--Conteúdo-->
+    <section class="conteudo">
+        <div class="conteudo-titulo container">
+            <div class="aluno container">
+                <a href=" {% url 'index' %}">Voltar para Home</a>  
+                <h1>Alunos</h1>
+            </div>
+        </div>
+        <div class="imagem-alunos container"></div>
+        <div class="texto container">
+            <h3 class="subtitulo">
+                Componentes do Loucos Por Pontos:
+            </h3>
+            <p>
+                Pedro Isaac, Adaylla Alannis, Antônio Antunes, João Maria e Giulliana Beatriz.
+            </p>
+        </div>
+    </section>
+
+{% endblock content %}

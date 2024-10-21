@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!--Box Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>{% block title %}Início{% endblock title %}</title>
+</head>
+<body>
+    
+    <!--Cabeçalho-->
+    <header class="shadow">
+        <!--Navegação-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="{% url 'index' %}" class="logo"><i class="bx bx-bomb"></i>LP<span>P</span></a>
+            <!--Menu Icon-->
+            <input type="checkbox" name="" id="menu">
+            <label for="menu" <i class="bx bx-menu" id="menu-icon"></i></label>
+            <!--Nav Bar-->
+            <ul class="navbar">
+                <li><a href="{% url 'index' %}">Início</a></li>
+                <li><a href=" {% url 'aluno' %}">Alunos</a></li>
+                <li><a href=" {% url 'referencia' %}">Referências</a></li>
+            </ul>
+        </div>
+    </header>
+
+    {% block content %}
+    
+    {% endblock content %}
+
+    <!--Rodapé-->
+    <footer class="footer container">
+        <div class="footer-caixa">
+            <div class="logo-footer">
+                <i class="bx bx-bomb"></i>
+                <h2>LoucosPor<span>Pontos</span></h2>
+            </div>
+            <p>© LPP 2024. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="main.js"></script>
+
+</body>
+</html>

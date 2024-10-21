@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Referências{% endblock title %}Referências
+{% load static %}
+
+{% block content %}
+
+    <!--Conteúdo-->
+    <section class="conteudo">
+        <div class="referencia container">
+            <a href=" {% url 'index' %}">Voltar para Home</a>  
+            <h1>Referências</h1>
+        </div>
+        <div class="texto container">
+            <h3 class="subtitulo">
+                Links das referências utilizadas para o conteúdo do blog:
+            </h3>
+            <ul class="link-referencia">
+                <li>Referências do post "Suplementos alimentares: o que são?" --> <a href="https://www.tuasaude.com/suplementos-alimentares/" target="_blank">site</a>, <a href="https://www.youtube.com/watch?v=OR0Xr-6rtr4" target="_blank">vídeo</a></li>
+                <li>Referência do post "Os 6 tipos de vitaminas mais importantes para o corpo" --> <a href="https://drconsulta.com/conteudo/tipos-de-vitaminas/" target="_blank">site</a></li>
+                <li>Referência do post "Conheça os tipos de proteína para suplementar" --> <a href="https://www.essentialnutrition.com.br/conteudos/tipos-de-proteinas/" target="_blank">site</a></li>
+                <li>Referência do post "Considerações gerais sobre minerais" --> <a href="https://www.msdmanuals.com/pt-br/casa/dist%C3%BArbios-nutricionais/minerais/considera%C3%A7%C3%B5es-gerais-sobre-minerais" target="_blank">site</a></li>
+                <li>Referência do post "Indicação de uso" --> <a href="https://unicardio.com.br/artigos/suplemento-vitaminico-quem-deve-tomar-quando-e-os-riscos/#:~:text=O%20uso%20de%20suplemento%20vitam%C3%ADnico,capaz%20de%20absorver%20essas%20subst%C3%A2ncias." target="_blank">site</a></li>
+                <li>Referência do post "A importância de consultar um profissional de saúde" --> <a href="https://medico24hs.com.br/blog/saude/os-beneficios-e-riscos-dos-suplementos-alimentares-para-a-saude#:~:text=Antes%20de%20iniciar%20a%20utiliza%C3%A7%C3%A3o,ao%20consumo%20de%20suplementos%20alimentares" target="_blank">site</a></li>
+                <li>Referência do post "9 suplementos para ganhar massa muscular" --> <a href="https://www.tuasaude.com/suplementos-para-ganhar-massa-muscular/" target="_blank">site</a></li>
+                <li>Referência do post "7 suplementos alimentares para idosos" --> <a href="https://blog.gsuplementos.com.br/suplemento-alimentar-para-idosos/" target="_blank">site</a></li>
+                <li>Referência do post "Suplementação na infância" --> <a href="https://www.essentialnutrition.com.br/conteudos/suplemento-alimentar-infantil/" target="_blank">site</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div style="height: 65px;">
+    </div>
+
+{% endblock content %}

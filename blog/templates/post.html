@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %} {{ post.titulo }} {% endblock title %}
+{% load static %}
+
+{% block content %}
+
+    <!--Conteúdo-->
+    <section class="conteudo">
+        <div class="conteudo-titulo container">
+            <div class="categoria-voltar">
+                <h2 class="categoria">{{ post.categoria }}</h2>
+                <a href=" {% url 'index' %}">Voltar para Home</a>
+            </div>
+            <h1>{{ post.titulo }}</h1>
+        </div>
+        
+        {% if post.imagem %}
+        <img src="{{ post.imagem.url }}" alt="" class="imagem-post">
+        {% else %}
+        <img src="{% static "assets/placeholder.jpg" %}" alt="" class="imagem-post-p1">
+        {% endif %}
+        
+        <div class="texto container">
+            <p> {{ post.conteudo }} </p>
+        </div>
+    </section>
+
+{% endblock content %}

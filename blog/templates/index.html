@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+    <!--Home-->
+    <section>
+        <div class="home container">
+            <div class="home-texto">
+                <h1>Suplementação alimentar:</h1>
+                <p>o que são, para que serve, tipos e como tomar</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Posts-->
+    <section class="post container">
+
+        {% for post in posts %}
+                <!--Post 1-->
+        <div class="post-caixa">
+            <img src="{{ post.imagem.url }}" alt="#" class="post-img">
+            <h2 class="categoria"> {{post.categoria}} </h2>
+            <a href="post 1.html" class="post-titulo"> {{ post.titulo}} </a>
+            <p class="post-descricao"> {{ post.descricao }} </p>
+        </div>
+        {% endfor %}
+
+    </section>
+
+        
+{% endblock content %}
