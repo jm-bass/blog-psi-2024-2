@@ -18,13 +18,13 @@
     <section class="post container">
 
         {% for post in posts %}
-                <!--Post 1-->
-        <div class="post-caixa">
-            <img src="{{ post.imagem.url }}" alt="#" class="post-img">
-            <h2 class="categoria"> {{post.categoria}} </h2>
-            <a href="post 1.html" class="post-titulo"> {{ post.titulo}} </a>
-            <p class="post-descricao"> {{ post.descricao }} </p>
-        </div>
+                    <!--Post 1-->
+            <div class="post-caixa">
+                <img src="{{ posts.imagem.url }}" alt="#" class="post-img">
+                <h2 class="categoria"> {{posts.categoria}} </h2>
+                <a href="post 1.html" class="post-titulo"> {{ posts.titulo}} </a>
+                <p class="post-descricao"> {{ posts.descricao }} </p>
+            </div>
         {% endfor %}
 
     </section>
